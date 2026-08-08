@@ -1,0 +1,294 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin:0;
+    background:#f6f8fa;
+    color:#081a35;
+    font-family:Inter,Arial,sans-serif;
+}
+header{
+    height:82px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 6vw;
+    border-bottom:1px solid #e7edf2;
+    position:sticky;
+    top:0;
+    z-index:20;
+}
+.LOGO{
+    display: flex;
+}
+nav{
+    display:flex;
+    gap:34px;
+}
+a{
+    color:#081a35;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+}
+.NAV{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.SEARCH,.PROFILE,.CARTS{
+    border:0;
+    background-color: transparent;
+    font-size:20px;
+    color:#081a35;
+    cursor:pointer
+}
+.LOGIN, .outline-btn{
+    background:transparent;
+    border:1px solid #c8d6e2;
+    border-radius:999px;
+    padding:12px 18px;
+    color:#081a35;
+    font-weight:700;
+    cursor:pointer
+}
+.BTN{
+    background:#0a2342;
+    color:#fff;
+    border:0;
+    border-radius:999px;
+    padding:13px 20px;
+    font-weight:800;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+}
+.BTN:hover{transform:translateY(-2px)}
+.search-panel{display:none;background:#fff;padding:18px 6vw;border-bottom:1px solid #e7edf2;position:fixed;top:82px;left:0;right:0;z-index:19}
+.search-panel.open{display:block}
+.search-wrap{max-width:1100px;margin:auto;display:flex;gap:15px;align-items:center}
+.search-wrap input{flex:1;border:0;outline:0;font-size:18px;padding:14px;background:#f4f7fa;border-radius:18px}
+.search-wrap button{border:0;background:none;font-weight:700;cursor:pointer}
+.hero{min-height:680px;padding:80px 8vw;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;overflow:hidden;background:linear-gradient(110deg,#f7fafc 0%,#e8f2f8 58%,#d3e6f2 100%)}
+.hero-copy{max-width:610px}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:3px;margin:0 0 18px;color:#477b9f}
+.hero .H1{
+    font-weight:900;
+    font-size:50px;
+    letter-spacing:3px;
+    margin:0 0 28px;
+}
+.hero p em,h2 em{font-style:normal;color:#4a82aa}
+.hero-text{font-size:16px;line-height:1.75;color:#506176;max-width:520px}
+.hero-buttons{display:flex;gap:12px;margin:30px 0 42px}
+.large{padding:16px 24px}
+.trust-row{display:flex;gap:38px}
+.trust-row div{display:flex;flex-direction:column;gap:5px}
+.trust-row strong{font-family:"Changa One";font-size:23px}
+.trust-row span{font-size:10px;color:#697b8e}
+.LOGO_SHOW{position:relative}
+.blob{position:absolute;border-radius:48% 52% 45% 55%;filter:blur(.2px);transform:rotate(-16deg)}
+.blob-a{width:470px;height:490px;background:#0a2342;right:20px;top:5px}
+.blob-b{width:340px;height:390px;background:#8db5d0;right:150px;top:60px;opacity:.8}
+.product-scene{position:absolute;inset:50px 70px;z-index:2}
+.shirt{position:absolute;width:260px;height:285px;left:105px;top:75px;background:#edf4f8;clip-path:polygon(22% 0,40% 13%,60% 13%,78% 0,100% 25%,82% 39%,74% 29%,74% 100%,26% 100%,26% 29%,18% 39%,0 25%);box-shadow:0 25px 50px #071a3340}
+.shirt-logo{font-family:"Changa One";font-size:80px;position:absolute;left:93px;top:82px;color:#0a2342}
+.shoe{position:absolute;width:250px;height:90px;right:5px;bottom:55px;background:#4d82a5;border-radius:80% 25% 25% 18%;transform:rotate(-12deg);box-shadow:0 20px 40px #071a3340}
+.shoe:after{content:"";position:absolute;left:25px;bottom:-3px;width:205px;height:22px;background:#f7fafc;border-radius:20px}
+.bag{position:absolute;width:105px;height:130px;left:20px;bottom:75px;background:#a8c9dc;border-radius:12px;transform:rotate(9deg);box-shadow:0 18px 35px #071a3340}
+.bag:before{content:"";position:absolute;left:22px;top:-48px;width:60px;height:70px;border:10px solid #a8c9dc;border-bottom:0;border-radius:40px 40px 0 0}
+.floating-card{position:absolute;z-index:4;background:#fff;border-radius:18px;padding:17px 20px;box-shadow:0 18px 40px #071a3322;display:flex;flex-direction:column;gap:5px}
+.card-top{right:0;top:55px}
+.card-top span{font-size:10px;letter-spacing:2px;color:#62839c}
+.card-top b{font-size:18px}
+.card-bottom{left:0;bottom:65px}
+.card-bottom small{color:#72859a}
+.card-bottom strong{font-size:13px}.section{padding:105px 8vw}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
+.section-heading h2,.split-copy h2,.cta h2{font-family:"Changa One",Impact,sans-serif;font-size:52px;line-height:.95;margin:0}
+.text-link{font-weight:800;color:#081a35;text-decoration:none}
+.category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.category{min-height:150px;text-align:left;background:#fff;border:1px solid #e3ebf1;border-radius:22px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;color:#081a35}
+.category:hover,.category.active{background:#0a2342;color:#fff;transform:translateY(-4px)}
+.category span{font-size:28px}
+.category b{font-size:16px}
+.category small{opacity:.6}
+.filters{display:flex;gap:7px}
+.filter{border:1px solid #d6e1e9;background:#fff;border-radius:999px;padding:9px 15px;cursor:pointer}
+.filter.active{background:#0a2342;color:#fff}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.product{position:relative;min-width:0}
+.heart{position:absolute;right:14px;top:14px;z-index:2;border:0;width:40px;height:40px;border-radius:50%;background:#fff;font-size:22px;cursor:pointer}
+.heart.liked{background:#0a2342;color:#fff}
+.product-img{height:360px;border-radius:25px;position:relative;overflow:hidden}
+.product-img span{position:absolute;top:15px;left:15px;background:#fff;padding:7px 10px;border-radius:999px;font-size:9px;font-weight:900;letter-spacing:1px}
+.p1{background:linear-gradient(145deg,#b8d0df,#527f9f)}
+.p1:after{content:"DENIM";font-family:"Changa One";font-size:95px;color:#e9f2f6;position:absolute;bottom:20px;left:25px;transform:rotate(-10deg)}
+.p2{background:radial-gradient(circle at 55% 45%,#fff 0 8%,transparent 9%),linear-gradient(145deg,#dbe9f2,#719bb7)}
+.p2:after{content:"AIR";font-family:"Changa One";font-size:100px;color:#fff;position:absolute;bottom:15px;right:15px;transform:rotate(-12deg)}
+.p3{background:linear-gradient(145deg,#e9eef0,#aec3cf)}
+.p3:after{content:"◐";font-size:210px;color:#f9fbfc;position:absolute;left:80px;top:70px}
+.p4{background:linear-gradient(145deg,#ccdce6,#668ba5)}
+.p4:after{content:"BAG";font-family:"Changa One";font-size:85px;color:#f2f7fa;position:absolute;left:50px;bottom:60px}
+.p5{background:linear-gradient(145deg,#d8e8f0,#7b9eb4)}
+.p5:after{content:"WATCH";font-family:"Changa One";font-size:68px;color:#f4f8fa;position:absolute;bottom:80px;left:30px}
+.p6{background:linear-gradient(145deg,#e6edf0,#9bb7c8)}
+.p6:after{content:"HOME";font-family:"Changa One";font-size:75px;color:#fff;position:absolute;bottom:80px;left:30px}
+.product-info{display:flex;justify-content:space-between;gap:15px;padding:15px 3px}
+.product-info h3{font-size:15px;margin:0 0 6px}
+.product-info p{font-size:11px;color:#708094;margin:0}
+.product-info strong{white-space:nowrap;font-size:15px}
+.split-section{margin:0 8vw 100px;border-radius:35px;overflow:hidden;background:#e3eef4;display:grid;grid-template-columns:1fr 1fr}
+.split-copy{padding:75px}
+.split-copy p:not(.eyebrow){color:#5b6d7e;line-height:1.7;max-width:430px;margin:25px 0}
+.steps{padding:55px;background:#0a2342;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.step{display:grid;grid-template-columns:55px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid #ffffff22}
+.step:last-child{border-bottom:0}.step>span{font-family:"Changa One";font-size:22px;color:#8eb8d2}
+.step h3{margin:0 0 7px;font-size:18px}
+.step p{margin:0;color:#b5c6d4;font-size:13px;line-height:1.5}
+.cta{margin:0 8vw 100px;border-radius:35px;padding:70px 75px;background:#4d82a5;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta .eyebrow{color:#d5e7f2}.cta h2{font-size:58px}
+.white-btn{background:#fff;color:#0a2342;border-radius:999px;padding:16px 23px;font-weight:900;text-decoration:none;white-space:nowrap}
+footer{background:#071a31;color:#fff;padding:55px 8vw}
+.TOP{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff1c;padding-bottom:30px}
+.TOP .LOGO{color:#fff}
+.TOP p{color:#9db0c2;font-size:13px}
+.LINKS{display:flex;gap:28px;padding:25px 0}
+.LINKS a{color:#b7c6d2}
+.LINKS+small{color:#71869a}
+
+
+.PROFILE_SHOW{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:50;
+    align-items:center;
+    justify-content:center;
+    padding:20px
+}
+.LIST{
+    position: absolute;
+    right: 180px;
+    top: 90px;
+    width: 270px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+}
+.BTN_LIST{
+    background:#0a2342;
+    color:#fff;
+    border:0;
+    border-radius:999px;
+    padding:13px 50px;
+    font-weight:800;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+}
+.BTN_LIST:hover{
+    transform:translateY(-2px)
+}
+.PROFILE_SHOW.OPEN{
+    display: block;
+}
+.MODAL{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:#071a3188;
+    z-index:50;
+    align-items:center;
+    justify-content:center;
+    padding:20px
+}
+.MODAL.OPEN{
+    display:flex
+}
+.BOX{
+    width:min(500px,100%);
+    background:#fff;
+    border-radius:28px;
+    padding:40px;
+    position:relative;
+    box-shadow:0 30px 80px #0004
+}
+.CLOSE{position:absolute;right:18px;top:15px;border:0;background:#f0f4f7;width:36px;height:36px;border-radius:50%;font-size:24px;cursor:pointer}
+.BOX h2{font-family:"Changa One";font-size:48px;line-height:.95;margin:0 0 12px}
+.BOX>p:not(.eyebrow){color:#647487;line-height:1.6}
+.LOGIN_REGISTER{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:25px;
+}
+.LOGIN_REGISTER input{
+    border:1px solid #d6e1e9;
+    padding:14px;
+    border-radius:14px;
+    outline:0;
+}
+.LOGIN_REGISTER .USERNAME{
+    display: none;
+}
+.LOGIN_REGISTER input:focus{
+    border-color:#4d82a5;
+}
+.LOGIN_REGISTER a {
+    align-self: flex-end;
+}
+.LOGIN_REGISTER a:last-child{
+    align-self: center;
+}
+
+
+@media(max-width:900px){
+    nav,.LOGIN{display:none}
+    .hero{grid-template-columns:1fr;padding-top:55px}
+    .hero-art{height:420px}
+    .category-grid{grid-template-columns:repeat(3,1fr)}
+    .product-grid{grid-template-columns:repeat(2,1fr)}
+    .split-section{grid-template-columns:1fr}
+    .cta{padding:50px 35px;flex-direction:column;align-items:flex-start}
+    .section-heading{align-items:flex-start;gap:20px;flex-direction:column}
+}
+    @media(max-width:600px){
+        header{padding:0 20px}
+        .NAV{gap:5px}
+        .BTN{padding:11px 14px;font-size:12px}
+        .hero{padding:55px 20px}
+        .hero h1{font-size:65px}
+        .hero-art{height:350px}
+        .product-scene{inset:30px 15px}
+        .blob-a{width:330px;height:350px;right:0}
+        .blob-b{width:250px;height:300px;right:50px}
+        .shirt{width:190px;height:210px;left:70px}
+        .shirt-logo{font-size:60px;left:65px;top:55px}
+        .shoe{width:180px}
+        .bag{width:80px;height:100px}
+        .floating-card{padding:12px}
+        .card-top{right:-5px}
+        .card-bottom{left:-5px}
+        .section{padding:70px 20px}
+        .section-heading h2,.split-copy h2{font-size:43px}
+        .category-grid{grid-template-columns:repeat(2,1fr)}
+        .product-grid{grid-template-columns:1fr}
+        .product-img{height:330px}
+        .filters{flex-wrap:wrap}
+        .split-section,.cta{margin-left:20px;margin-right:20px}
+        .split-copy{padding:45px 30px}
+        .steps{padding:30px}
+        .cta h2{font-size:45px}
+        .TOP{flex-direction:column;align-items:flex-start;gap:15px}
+        .LINKS{flex-wrap:wrap}
+    }

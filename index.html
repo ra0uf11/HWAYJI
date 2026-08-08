@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HWAYJI</title>
+  <meta name="description" content="Hwayji — Achetez, vendez et trouvez des articles près de chez vous.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2dee4249ab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <a class="LOGO" href="#"><img src="IMAGES/HWAYJI.png" style="width: 100px;"></a>
+    <nav>
+      <a href="#explore">Explorer</a>
+      <a href="#categories">Catégories</a>
+      <a href="#contact">Contactez-nous</a>
+      <a href="#hwayji">À propos de nous</a>
+    </nav>
+    <div class="NAV">
+      <button class="SEARCH" aria-label="Rechercher" id="searchToggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="CARTS"><i class="fa-solid fa-cart-shopping"></i></button>
+      <button class="PROFILE" id="PROFILE"><i class="fa-solid fa-circle-user"></i></button>
+      <button class="LOGIN" id="LOGIN_SHOW">Se connecter</button>
+    </div>
+  </header>
+
+  <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LE MARKETPLACE FAIT POUR NOUS</p>
+        <p class="H1">TON STYLE<br><em>TON PRIX</em><br>TON HWAYJI</p>
+        <p class="hero-text">Achète et vends facilement des articles près de chez toi. Mode, tech, maison et bien plus — simplement, localement, en toute confiance.</p>
+        <div class="hero-buttons">
+          <a class="BTN large" href="#explore">Explorer les articles <span>↗</span></a>
+          <button class="outline-btn large" id="heroSell">Je veux vendre</button>
+        </div>
+        <div class="trust-row">
+          <div><strong>+10K</strong><span>articles à découvrir</span></div>
+          <div><strong>48</strong><span>wilayas à terme</span></div>
+          <div><strong>100%</strong><span>pensé pour l'Algérie</span></div>
+        </div>
+      </div>
+  </section>
+  
+    <section class="split-section" id="how">
+      <div class="split-copy">
+        <p class="eyebrow">SIMPLE COMME ÇA</p>
+        <h2>Vends ce dont<br>tu n'as plus<br><em>besoin.</em></h2>
+        <p>Une photo, quelques détails, ton prix. Ton annonce est prête en quelques minutes.</p>
+        <button class="BTN" id="splitSell">Publier une annonce ↗</button>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><div><h3>Crée ton annonce</h3><p>Ajoute des photos, un titre et un prix.</p></div></div>
+        <div class="step"><span>02</span><div><h3>Discute avec l'acheteur</h3><p>Échange directement et fixe le rendez-vous.</p></div></div>
+        <div class="step"><span>03</span><div><h3>Vends en toute confiance</h3><p>Profils et vendeurs vérifiés arrivent progressivement.</p></div></div>
+      </div>
+    </section>
+  <section class="cta">
+      <div><p class="eyebrow">HWAYJI</p><h2>Ce que tu cherches<br>est peut-être juste à côté.</h2></div>
+      <a class="white-btn" href="#explore">Commencer à explorer ↗</a>
+  </section>
+
+  <footer>
+    <div class="TOP">
+      <a class="LOGO" href="#">HWAYJI<span>.</span></a>
+      <p>Le marketplace algérien, pensé pour la vraie vie.</p>
+    </div>
+    <div class="LINKS">
+      <a href="#">À propos</a>
+      <a href="#">Sécurité</a>
+      <a href="#">Aide</a>
+      <a href="#">Conditions</a>
+      <a href="#">Instagram</a>
+    </div>
+    <small>© 2026 Hwayji. Tous droits réservés.</small>
+  </footer>
+
+  <div class="PROFILE_SHOW" id="PROFILE_SHOW">
+      <div class="LIST">
+        <button class="BTN_LIST" id="FAVORIS"><i class="fa-solid fa-heart"></i> FAVORIS</button>
+        <hr>
+        <button class="BTN_LIST" id="MODE"><i class="fa-solid fa-moon"></i> MODE</button>
+        <hr>
+        <button class="BTN_LIST" id="SETTINGS"><i class="fa-solid fa-gear"></i> SETTINGS</button>
+      </div>
+  </div>
+
+  <div class="MODAL" id="MODAL">
+    <div class="BOX">
+      <button class="CLOSE" id="CLOSE">×</button>
+      <p class="eyebrow">HWAYJI</p>
+      <h2 id="TITLE">Connectez vous</h2>
+      <p id="TEXT">Cette interface est prête pour être connectée au système de publication et au compte utilisateur.</p>
+     
+      <div class="LOGIN_REGISTER" id="LOGIN_REGISTER">
+        <input placeholder="Numéro de téléphone">
+        <input placeholder="Username" class="USERNAME" id="USERNAME">
+        <input placeholder="Mot de passe">
+        <a href="#MDP" id="MDP">Mot de passe oublié?</a>
+        <button class="BTN LOGIN_REGISTER" id="LOGIN">Se connecter ↗</button>
+        <a href="#REGISTER" id="REGISTER">pas de compte?</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
